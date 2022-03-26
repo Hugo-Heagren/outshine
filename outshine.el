@@ -118,8 +118,7 @@ Please report a bug if this needs to be changed.")
     (" " . (outshine-use-outorg
             'org-display-outline-path
             'WHOLE-BUFFER-P))
-    ;; [X]
-    ("r" . outshine-narrow-to-subtree)
+    ("s" . outshine-narrow-to-subtree)
     ;; [X]
     ("w" . widen)
     ;; ;; [ ]
@@ -129,6 +128,11 @@ Please report a bug if this needs to be changed.")
     ("U" . outline-move-subtree-up)
     ;; [X] FIXME error with oldschool elisp headers
     ("D" . outline-move-subtree-down)
+    ;; [X]
+    ("l" . outline-promote)
+    ("r" . outline-demote)
+    ("L" . outline-promote)
+    ("R" . outline-demote)
     ;; [X]
     ("+" . outline-demote)
     ;; [X]
@@ -141,7 +145,7 @@ Please report a bug if this needs to be changed.")
     ;; ("a" . (outshine-use-outorg
     ;;      'org-archive-subtree-default-with-confirmation))
     ;; [X]
-    ("m" . outline-mark-subtree)
+    ("@" . outline-mark-subtree)
     ;; [X]
     ("#" . outshine-toggle-comment)
     ("Clock Commands")
